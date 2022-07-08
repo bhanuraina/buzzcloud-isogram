@@ -60,6 +60,10 @@ Set region and accountId variable as default.
 
 ### Deployment 
 
+$ git clone <github repo url>
+
+$ cd <repo dir>
+
 $ terraform init
 
 $ terraform plan
