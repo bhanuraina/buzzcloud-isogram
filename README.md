@@ -4,6 +4,11 @@ Assignment
 
 Lambda Function to check whether a given string is ISOGRAM exception of "-" and " " space is allowed multiple times.
 
+#### High level Architecture
+
+![image](https://user-images.githubusercontent.com/26302748/178082099-f3bca686-deb2-4fba-bb58-836c04d7e587.png)
+
+
 #### Installation and modules
 
 Install tools
