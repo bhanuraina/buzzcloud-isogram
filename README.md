@@ -8,7 +8,11 @@ Given a word or phrase, check if it is isogram or not. An Isogram is a word in w
 
 ##Solution :
 
-Lambda Function to check whether a given string is ISOGRAM exception of "-" and " " space is allowed multiple times.
+* Write Function using python code , to check whether a given string is ISOGRAM exception of "-" and " " space is allowed multiple times.
+
+* Write terraform code to create lambda and trigger using ApiGateway
+
+* Cloud platform : AWS
 
 #### High level Architecture
 
