@@ -28,7 +28,6 @@ Default output format [json]:
 |-------------------------------------------------|
 |  <a name="secret1"></a> AWS_ACCESS_KEY_ID       |
 |  <a name="secret2"></a> AWS_SECRET_ACCESS_KEY   |
-          |
 
 Set region and accountId variable as default.
 
