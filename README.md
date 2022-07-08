@@ -39,4 +39,9 @@ Set region and accountId variable as default.
   default ="xxxxxxxxx"
 }
 
+### Outputs Invoke Url
+
+Outputs:
+
+e.g. |deployment_invoke_url = "https://gomhen3z03.execute-api.us-east-1.amazonaws.com/stage1"|
 
