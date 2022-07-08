@@ -19,10 +19,10 @@ Set ACCESS_KEY and SECRET_KEY
 
 aws configure 
 
-AWS Access Key ID [****************OXXH]: 
-AWS Secret Access Key [****************bHbu]: 
-Default region name [us-east-1]: 
-Default output format [json]: 
+AWS Access Key ID [****************OXXH]:
+AWS Secret Access Key [****************bHbu]:
+Default region name [us-east-1]:
+Default output format [json]:
 
 | Secrets                                         |
 |-------------------------------------------------|
