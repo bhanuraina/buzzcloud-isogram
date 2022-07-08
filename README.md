@@ -4,14 +4,18 @@ Assignment
 
 Lambda Function to check whether a given string is ISOGRAM exception of "-" and " " space is allowed multiple times.
 
-#### Installation 
+#### Installation and modules
 
 Install tools
 
-Aws CLI
-Terraform
-python3.9
+* Aws CLI
+* Terraform
+* python3.9
 
+Modules
+
+- Lambda 
+- APi gateway
 
 #### Configuration
 
