@@ -2,6 +2,12 @@
 Assignment
 #### Project Details
 
+What is isogram -
+
+Given a word or phrase, check if it is isogram or not. An Isogram is a word in which no letter occurs more than once.
+
+##Solution :
+
 Lambda Function to check whether a given string is ISOGRAM exception of "-" and " " space is allowed multiple times.
 
 #### High level Architecture
