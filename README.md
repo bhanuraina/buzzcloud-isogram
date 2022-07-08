@@ -1,10 +1,11 @@
-# buzzcloud-isogram
-Assignment
+
+# Assignment - Given a word or phrase, check if it is isogram or not.
+
 #### Project Details
 
 What is isogram -
 
-Given a word or phrase, check if it is isogram or not. An Isogram is a word in which no letter occurs more than once.
+An Isogram is a word in which no letter occurs more than once.
 
 ##Solution :
 
