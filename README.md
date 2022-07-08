@@ -73,7 +73,7 @@ $ terraform plan
 
 $ terraform apply
 
-### Outputs Invoke Url
+### Output Invoke Url
 The Rest Api url can be used to invoke the lambda function along with query string named "string1"
  
 Outputs:
