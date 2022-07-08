@@ -60,11 +60,11 @@ Set region and accountId variable as default.
 
 ### Deployment 
 
-# terraform init
+$ terraform init
 
-# terraform plan
+$ terraform plan
 
-# terraform apply
+$ terraform apply
 
 ### Outputs Invoke Url
 The Rest Api url can be used to invoke the lambda function along with query string named "string1"
