@@ -8,10 +8,10 @@ Lambda Function to check whether a given string is ISOGRAM exception of "-" and 
 
 Set region and accountId variable as default.
 
-variable "myregion" {
+#variable "myregion" {
   default ="us-east-1"
 }
-variable "accountId" {
+#variable "accountId" {
   default ="xxxxxxxxx"
 }
 
