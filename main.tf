@@ -1,9 +1,13 @@
+#variables declaration
+
 variable "myregion" {
   default ="us-east-1"
 }
 variable "accountId" {
   default ="688164270212"
 }
+
+# API Gateway definition 
 resource "aws_api_gateway_rest_api" "api"  {
   api_key_source               = "HEADER"
     
@@ -28,13 +32,13 @@ resource "aws_api_gateway_rest_api" "api"  {
 }
 
 
-
+# Api Root resource configuration
 resource "aws_api_gateway_resource" "resource" {
   path_part   = "isogram"
   parent_id   = aws_api_gateway_rest_api.api.root_resource_id
   rest_api_id = aws_api_gateway_rest_api.api.id
 }
-
+# Api Gateway Method configuration
 resource "aws_api_gateway_method" "method" {
   rest_api_id   = aws_api_gateway_rest_api.api.id
   resource_id   = aws_api_gateway_resource.resource.id
@@ -42,6 +46,7 @@ resource "aws_api_gateway_method" "method" {
   authorization = "NONE"
 }
 
+# Api Gateway Integration configuration for lambda invokation
 resource "aws_api_gateway_integration" "integration" {
   rest_api_id             = aws_api_gateway_rest_api.api.id
   resource_id             = aws_api_gateway_resource.resource.id
@@ -52,7 +57,7 @@ resource "aws_api_gateway_integration" "integration" {
   
 }
 
-# Lambda
+# Lambda Permision for invoking the function
 resource "aws_lambda_permission" "apigw_lambda" {
   statement_id  = "AllowExecutionFromAPIGateway"
   action        = "lambda:InvokeFunction"
@@ -63,6 +68,7 @@ resource "aws_lambda_permission" "apigw_lambda" {
   source_arn = "arn:aws:execute-api:${var.myregion}:${var.accountId}:${aws_api_gateway_rest_api.api.id}/*/${aws_api_gateway_method.method.http_method}${aws_api_gateway_resource.resource.path}"
 }
 
+# Lambda function declaration
 resource "aws_lambda_function" "test_lambda" {
 
 architectures                  = [
@@ -95,6 +101,7 @@ architectures                  = [
 
 }
 
+# Api Deployment configuration
 resource "aws_api_gateway_deployment" "MyAPiDeployment" {
   depends_on = [aws_api_gateway_integration.integration]
 
@@ -110,6 +117,7 @@ resource "aws_api_gateway_deployment" "MyAPiDeployment" {
   }
 }
 
+# Definng output variable for invoke url
 output "deployment_invoke_url" {
   description = "Deployment invoke url"
   value       = aws_api_gateway_deployment.MyAPiDeployment.invoke_url
