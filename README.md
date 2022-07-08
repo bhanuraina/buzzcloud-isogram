@@ -24,12 +24,18 @@ AWS Secret Access Key [****************bHbu]:
 Default region name [us-east-1]: 
 Default output format [json]: 
 
+| Secrets                                         |
+|-------------------------------------------------|
+|  <a name="secret1"></a> AWS_ACCESS_KEY_ID       |
+|  <a name="secret2"></a> AWS_SECRET_ACCESS_KEY   |
+          |
 
 Set region and accountId variable as default.
 
 #variable "myregion" {
   default ="us-east-1"
 }
+
 #variable "accountId" {
   default ="xxxxxxxxx"
 }
