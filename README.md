@@ -40,8 +40,15 @@ Set region and accountId variable as default.
 }
 
 ### Outputs Invoke Url
-
+The Rest Api url can be used to invoke the lambda function along with query string named "string1"
+ 
 Outputs:
 
-e.g. |deployment_invoke_url = "https://gomhen3z03.execute-api.us-east-1.amazonaws.com/stage1"|
+|deployment_invoke_url = "https://gomhen3z03.execute-api.us-east-1.amazonaws.com/stage1"|
+
+eg. https://gomhen3z03.execute-api.us-east-1.amazonaws.com/stage1/isogram?string1=hello
+
+![image](https://user-images.githubusercontent.com/26302748/178081926-59e0c1cc-66f4-4378-bc57-8ec7fb9f6dcb.png)
+
+
 
