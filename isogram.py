@@ -1,3 +1,22 @@
+import json
+
+status="The String is an Isogram."
+def lambda_handler(event, context):
+    # TODO implement
+    
+    if check_isogram("sixx-year----old") :
+        
+        status="The String is an Isogram."
+    
+    else:
+        
+        status="The String is not an Isogram."
+    
+    return {
+        'statusCode': 200,
+        'body': json.dumps(status)
+    }
+
 def check_isogram(str1):
     
     
@@ -15,4 +34,3 @@ def check_isogram(str1):
         
         return len(str1) == len(set(str1.lower()))
 
-print(check_isogram("six-year----old"))
