@@ -65,7 +65,7 @@ $ git clone <github repo url>
 
 $ cd <repo dir>
 
-$ zip lambda_function.py 
+$ zip -r lambda_function.py.zip lambda_function.py 
 
 $ terraform init
 
