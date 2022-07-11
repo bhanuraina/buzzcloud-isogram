@@ -71,7 +71,11 @@ $ terraform init
 
 $ terraform plan
 
-$ terraform apply
+$ terraform apply  # using default values 
+or 
+$ terraform apply -var="myregion=<your region>" -var="accountId=<your account id >"  # passing runtime values
+
+e.g. terraform apply -var="myregion=us-east-1" -var="accountId=341872903817"
 
 ### Output Invoke Url
 The Rest Api url can be used to invoke the lambda function along with query string named "string1"
